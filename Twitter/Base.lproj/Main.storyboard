@@ -176,11 +176,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q51-Cv-Ogz">
+                                <rect key="frame" x="0.0" y="236" width="126.66666666666667" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="q51-Cv-Ogz" firstAttribute="top" secondItem="CSW-S4-1E0" secondAttribute="bottom" constant="20" id="DYV-qw-MJb"/>
                             <constraint firstItem="CSW-S4-1E0" firstAttribute="leading" secondItem="8Px-Nc-LJo" secondAttribute="leading" id="Eml-Et-DHI"/>
                             <constraint firstItem="CSW-S4-1E0" firstAttribute="top" secondItem="8Px-Nc-LJo" secondAttribute="top" id="OSv-K5-114"/>
+                            <constraint firstItem="q51-Cv-Ogz" firstAttribute="leading" secondItem="8Px-Nc-LJo" secondAttribute="leading" id="TPh-FT-raN"/>
                             <constraint firstItem="8Px-Nc-LJo" firstAttribute="trailing" secondItem="CSW-S4-1E0" secondAttribute="trailing" id="nQQ-0s-ipB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Px-Nc-LJo"/>
@@ -200,6 +208,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="characterCountLabel" destination="q51-Cv-Ogz" id="9ZH-et-c8W"/>
                         <outlet property="tweetTextView" destination="CSW-S4-1E0" id="cUp-Uo-Pbu"/>
                     </connections>
                 </viewController>
